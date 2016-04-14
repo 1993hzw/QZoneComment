@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:visibility="gone"
+          android:text="加油"
+          android:textColor="#000000"
+          android:textSize="14dp"
+          android:paddingBottom="6dp"
+          android:textColorLink="@color/selector_comment_name"
+          android:textColorHighlight="#44888888"
+        />
+<!-- 上面两个属性要同时设置，而且textColorLink必须设置为ColorList！！！！！！！！！
+-->

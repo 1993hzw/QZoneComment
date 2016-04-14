@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="当前用户id:1,昵称：走向远方"
+            android:background="#ffffff"
+            android:textColor="#aaaaaa"
+            android:padding="10dp"
+            android:id="@+id/title"
+            />
+    <ListView android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ececec"
+              android:id="@+id/list_moment"
+              android:dividerHeight="10dp"
+              android:divider="#ececec"
+              android:cacheColorHint="@android:color/transparent"
+            ></ListView>
+</LinearLayout>
+

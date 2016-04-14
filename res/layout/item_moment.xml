@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="#ffffff"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="5dp"
+              android:paddingRight="5dp"
+        >
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            >
+        <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/author_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_launcher"
+                android:layout_marginRight="10dp"
+                />
+        <TextView android:id="@+id/name"
+                  android:layout_alignTop="@+id/author_icon"
+                  android:layout_toRightOf="@id/author_icon"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="作者"
+                  android:textSize="18dp"
+                  android:textColor="@android:color/black"
+                />
+        <TextView android:id="@+id/time"
+                  android:layout_toRightOf="@id/author_icon"
+                  android:layout_alignBottom="@id/author_icon"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="2012-01-02:12"
+                  android:textSize="16dp"
+                  android:textColor="@android:color/darker_gray"
+                />
+    </RelativeLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:text="Hello,world!"
+              android:textColor="#000000"
+              android:padding="10dp"
+              android:id="@+id/content"
+            />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="1dp"
+                 android:background="#cccccc"
+            />
+    <LinearLayout android:layout_marginTop="5dp"
+                  android:id="@+id/comment_list"
+                  android:background="#ffffff"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+    </LinearLayout>
+    <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/btn_input_comment"
+            android:hint="评论"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textSize="14dp"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_input_comment"
+            android:textColorHint="#aaaaaa"
+            android:onClick="inputComment"
+            />
+</LinearLayout>
