@@ -7,50 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="058cae6c-3ecf-4d76-b132-e25f25f35b1b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradlew" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradlew.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/AndroidManifest.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/res/color/selector_comment_name.xml" afterPath="$PROJECT_DIR$/app/res/color/selector_comment_name.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/app/res/drawable-hdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/res/drawable-ldpi/ic_launcher.png" afterPath="$PROJECT_DIR$/app/res/drawable-ldpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/app/res/drawable-mdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/app/res/drawable-xhdpi/ic_launcher.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/res/drawable/bg_input_comment.xml" afterPath="$PROJECT_DIR$/app/res/drawable/bg_input_comment.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/res/layout/item_header.xml" afterPath="$PROJECT_DIR$/app/res/layout/item_header.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/res/layout/item_moment.xml" afterPath="$PROJECT_DIR$/app/res/layout/item_moment.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/app/res/layout/main.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/res/layout/view_comment_list_item.xml" afterPath="$PROJECT_DIR$/app/res/layout/view_comment_list_item.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/res/layout/view_input_comment.xml" afterPath="$PROJECT_DIR$/app/res/layout/view_input_comment.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/res/values/strings.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/res/values/styles.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/example/QzoneComment/CommentFun.java" afterPath="$PROJECT_DIR$/app/src/com/example/QzoneComment/CommentFun.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/example/QzoneComment/CustomTagHandler.java" afterPath="$PROJECT_DIR$/app/src/com/example/QzoneComment/CustomTagHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/example/QzoneComment/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/com/example/QzoneComment/MainActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/example/QzoneComment/MomentAdapter.java" afterPath="$PROJECT_DIR$/app/src/com/example/QzoneComment/MomentAdapter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/example/QzoneComment/model/Comment.java" afterPath="$PROJECT_DIR$/app/src/com/example/QzoneComment/model/Comment.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/example/QzoneComment/model/Moment.java" afterPath="$PROJECT_DIR$/app/src/com/example/QzoneComment/model/Moment.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/example/QzoneComment/model/User.java" afterPath="$PROJECT_DIR$/app/src/com/example/QzoneComment/model/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QzoneComment.iml" afterPath="$PROJECT_DIR$/QzoneComment.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
-    <list id="7b90e341-8d4b-4021-b187-5b7d08db9449" name="New changelist" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-    </list>
+    <list id="7b90e341-8d4b-4021-b187-5b7d08db9449" name="New changelist" comment="" />
     <ignored path="QZoneComment.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/build/classes/" />
@@ -115,7 +79,7 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-122">
+            <state relative-caret-position="19">
               <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
               <folding />
             </state>
@@ -2073,6 +2037,14 @@
       <option name="presentableId" value="Default" />
       <updated>1505738760062</updated>
     </task>
+    <task id="LOCAL-00001" summary="移植为gradle项目">
+      <created>1505739652672</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1505739652672</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2120,6 +2092,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="移植为gradle项目" />
+    <option name="LAST_COMMIT_MESSAGE" value="移植为gradle项目" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="false" />
   </component>
   <component name="XDebuggerManager">
@@ -2164,7 +2138,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-122">
+        <state relative-caret-position="19">
           <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
           <folding />
         </state>
