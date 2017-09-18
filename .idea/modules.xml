@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/QzoneComment.iml" filepath="$PROJECT_DIR$/QzoneComment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QZoneComment.iml" filepath="$PROJECT_DIR$/QZoneComment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
 </project>
