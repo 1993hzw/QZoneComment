@@ -11,10 +11,7 @@
 
 ![img](https://raw.githubusercontent.com/1993hzw/common/master/QZoneComment/02.png)
 
-```java
 [CommonFun](https://github.com/1993hzw/QZoneComment/blob/master/app/src/com/example/QzoneComment/CommentFun.java)
-
-```
 
 最后要弄的就是评论中，评论者、接收者和评论内容用不同的颜色显示，且点击时有点击效果。这里可以通过下面的代码实现，
 ```java
