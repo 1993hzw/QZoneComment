@@ -45,7 +45,7 @@ public class CommentFun {
                 commentList.addView(textView);
             }
             textView.setVisibility(View.VISIBLE);
-            if (comment.mReceiver == null) {
+            if (comment.mReceiver == null) { // 没有评论接受者
                 content = String.format("<html><%s>%s</%s>: <%s>%s</%s></html>", CustomTagHandler.TAG_COMMENTATOR,
                         comment.mCommentator.mName, CustomTagHandler.TAG_COMMENTATOR,
                         CustomTagHandler.TAG_CONTENT, comment.mContent, CustomTagHandler.TAG_CONTENT);
@@ -55,7 +55,7 @@ public class CommentFun {
                         CustomTagHandler.TAG_RECEIVER, comment.mReceiver.mName, CustomTagHandler.TAG_RECEIVER,
                         CustomTagHandler.TAG_CONTENT, comment.mContent, CustomTagHandler.TAG_CONTENT);
             }
-            textView.setText(Html.fromHtml(content, null, tagHandler));
+            textView.setText(Html.fromHtml(content, null, tagHandler)); // 解析标签
             textView.setClickable(true);
             textView.setMovementMethod(LinkMovementMethod.getInstance());
             textView.setTag(CustomTagHandler.KEY_COMMENTATOR, comment.mCommentator);
@@ -100,6 +100,7 @@ public class CommentFun {
             btnComment.getLocationOnScreen(coord);
         }
 
+        //弹出评论对话框
         showInputComment(activity, hint, new CommentDialogListener() {
             @Override
             public void onClickPublish(final Dialog dialog, EditText input, final TextView btn) {
@@ -119,6 +120,10 @@ public class CommentFun {
                 Toast.makeText(activity, "评论成功", Toast.LENGTH_SHORT).show();
             }
 
+            /**
+             * @see CommentDialogListener
+             * @param inputViewCoordinatesInScreen [left,top]
+             */
             @Override
             public void onShow(int[] inputViewCoordinatesInScreen) {
                 if (listView != null) {
@@ -178,7 +183,7 @@ public class CommentFun {
                 if (listener != null) {
                     int[] coord = new int[2];
                     dialog.findViewById(R.id.input_comment_container).getLocationOnScreen(coord);
-                    // 传入 输入框距离屏幕顶部（不包括状态栏）的长度
+                    // 传入 输入框距离屏幕顶部（不包括状态栏）的位置
                     listener.onShow(coord);
                 }
             }
@@ -186,9 +191,16 @@ public class CommentFun {
         return dialog;
     }
 
+    /**
+     * 评论对话框相关监听
+     */
     public interface CommentDialogListener {
         void onClickPublish(Dialog dialog, EditText input, TextView btn);
 
+        /**
+         * onShow在输入法弹出后才调用
+         * @param inputViewCoordinatesOnScreen 输入框距离屏幕顶部（不包括状态栏）的位置[left,top]
+         */
         void onShow(int[] inputViewCoordinatesOnScreen);
 
         void onDismiss();

@@ -17,9 +17,10 @@ import java.util.HashMap;
  * 显示评论的自定义Html标签解析器
  */
 public class CustomTagHandler implements Html.TagHandler {
+    //自定义标签
     public static final String TAG_COMMENTATOR = "commentator"; // 评论者
     public static final String TAG_RECEIVER = "receiver"; // 评论接收者，即对谁评论
-    public static final String TAG_CONTENT = "content"; // 评论接收者，即对谁评论
+    public static final String TAG_CONTENT = "content"; // 评论内容
 
     public static final int KEY_COMMENTATOR = -2016;
     public static final int KEY_RECEIVER = -20162;
@@ -53,6 +54,11 @@ public class CustomTagHandler implements Html.TagHandler {
                     listener.onReceiverClick(widget, user);
                 }
             }
+            @Override
+            public void updateDrawState(TextPaint ds) {
+                ds.setColor(0xFF436B9C);//接收者字体颜色
+                ds.setUnderlineText(false);
+            }
         };
         mContentSpan = new BaseClickableSpan() {
             @Override
@@ -72,13 +78,17 @@ public class CustomTagHandler implements Html.TagHandler {
         };
     }
 
+    /**
+     * 解析自定义标签
+     */
     @Override
     public void handleTag(boolean opening, String tag, final Editable output, XMLReader xmlReader) {
         if (!tag.toLowerCase().equals(TAG_COMMENTATOR) && !tag.toLowerCase().equals(TAG_RECEIVER)
                 && !tag.toLowerCase().equals(TAG_CONTENT)) {
             return;
         }
-        if (opening) {
+        if (opening) {  //开始标签
+            // 记录标签内容的起始索引
             int mStart = output.length();
             if (tag.toLowerCase().equals(TAG_COMMENTATOR)) {
                 mMaps.put(KEY_COMMENTATOR_START, mStart);
@@ -87,8 +97,8 @@ public class CustomTagHandler implements Html.TagHandler {
             } else if (tag.toLowerCase().equals(TAG_CONTENT)) {
                 mMaps.put(KEY_CONTENT_START, mStart);
             }
-        } else {
-            int mEnd = output.length();
+        } else { // 结束标签
+            int mEnd = output.length(); //标签内容的结束索引
 
             if (tag.toLowerCase().equals(TAG_COMMENTATOR)) {
                 int mStart = mMaps.get(KEY_COMMENTATOR_START);
@@ -111,6 +121,9 @@ public class CustomTagHandler implements Html.TagHandler {
         }
     }
 
+    /**
+     *
+     */
     abstract class BaseClickableSpan extends ClickableSpan {
         public BaseClickableSpan() {
 
@@ -121,7 +134,7 @@ public class CustomTagHandler implements Html.TagHandler {
 
         @Override
         public void updateDrawState(TextPaint ds) {
-            ds.setColor(ds.linkColor);
+            ds.setColor(ds.linkColor); //默认颜色
             ds.setUnderlineText(false);
         }
     }

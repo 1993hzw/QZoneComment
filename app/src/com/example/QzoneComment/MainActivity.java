@@ -49,6 +49,7 @@ public class MainActivity extends Activity {
                 Toast.makeText(getApplicationContext(), receiver.mName, Toast.LENGTH_SHORT).show();
             }
 
+            // 点击评论内容，弹出输入框回复评论
             @Override
             public void onContentClick(View view, User commentator, User receiver) {
                 if (commentator != null && commentator.mId == sUser.mId) { // 不能回复自己的评论
@@ -72,6 +73,11 @@ public class MainActivity extends Activity {
         inputComment(v, null);
     }
 
+    /**
+     * 弹出评论对话框
+     * @param v
+     * @param receiver
+     */
     public void inputComment(final View v, User receiver) {
         CommentFun.inputComment(MainActivity.this, mListView, v, receiver, new CommentFun.InputCommentListener() {
             @Override

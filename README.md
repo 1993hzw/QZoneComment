@@ -11,7 +11,17 @@
 
 ![img](https://raw.githubusercontent.com/1993hzw/common/master/QZoneComment/02.png)
 
-最后要弄的就是评论中，评论者、接收者和评论内容用不同的颜色显示，且点击时有点击效果。这里可以通过TextView.setText(Html.fromHtml(content, imageGettor, tagHandler))来实现，自定义标签，通过自定义的标签解析类Html.TagHandler来响应不同标签的操作。这里我自定义了commentator、receiver、content标签，列入一条评论的字符串形式为“<commentator>用户１</commentator> 回复 <receiver>用户２</receiver>:<content>评论内容</content>”，点击content标签时对该评论的评论者进行回复。
+```java
+[CommonFun](https://github.com/1993hzw/QZoneComment/blob/master/app/src/com/example/QzoneComment/CommentFun.java)
+
+```
+
+最后要弄的就是评论中，评论者、接收者和评论内容用不同的颜色显示，且点击时有点击效果。这里可以通过下面的代码实现，
+```java
+TextView.setText(Html.fromHtml(content, imageGettor, tagHandler))
+```
+自定义标签，通过自定义的标签解析类Html.TagHandler来响应不同标签的操作。这里我自定义了commentator、receiver、content标签，列入一条评论的字符串形式为“<commentator>用户１</commentator> 回复 <receiver>用户２</receiver>:<content>评论内容</content>”，点击content标签时对该评论的评论者进行回复。
+[CustomTagHandler](https://github.com/1993hzw/QZoneComment/blob/master/app/src/com/example/QzoneComment/CustomTagHandler.java)
 
 在ListView中，因为Item里面的子View使用了ClickableSpan,导致ListView的OnItemClickListener失效，解决的方法可以在getView中加入下列代码，阻止ListView里面的子View拦截焦点。
 ```java
@@ -21,6 +31,18 @@ public View getView(int position, View convertView, ViewGroup parent) {
     ((ViewGroup) convertView).setDescendantFocusability(ViewGroup.FOCUS_BLOCK_DESCENDANTS);  
     }  
 }
+```
+
+设置点击的文字背景色：
+
+```xml
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"  
+          ...  
+          android:textColorLink="@color/selector_comment_name"  
+          android:textColorHighlight="#44000000"  
+        />  
+<!-- 上面两个属性(textColorLink、textColorHighlight)要同时设置，而且textColorLink必须设置为ColorList！！！！！！！！！ 
+-->  
 ```
 
 难点都已经解决了，最后实现的效果如下：
